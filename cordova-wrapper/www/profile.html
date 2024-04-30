@@ -9,7 +9,7 @@
 
   <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
   <link integrity="" rel="stylesheet" href="/assets/my-frontend-app-d41d8cd98f00b204e9800998ecf8427e.css">
-  <link rel="stylesheet" type="text/css" href="/css/profile.css">
+  <script type="module" src="js/profile.js" ></script>
 
 
   <style data-styled="active" data-styled-version="5.3.8">
@@ -104,8 +104,8 @@
 <!-- Main Body -->
 <div>
   <div style="width: 100%; height: 100%; position: relative; background: white">
-    <div style="width: 376px; height: 245px; left: -1px; top: 0px; position: absolute; background: #62931B"></div>
-    <img style="width: 158px; height: 158px; left: 108px; top: 128px; position: absolute; box-shadow: 0px 4px 20px rgba(100.94, 100.94, 100.94, 0.15); border-radius: 9999px; border: 4px white solid" src="https://via.placeholder.com/158x158">
+    <div style="width: 400px; height: 245px; left: -20px; top: -20px; position: absolute; background: #62931B"></div>
+    <img id="profile-image" style="width: 158px; height: 158px; left: 108px; top: 128px; position: absolute; box-shadow: 0px 4px 20px rgba(100.94, 100.94, 100.94, 0.15); border-radius: 9999px; border: 4px white solid" src="https://via.placeholder.com/158x158">
     <div style="width: 375px; height: 44px; left: 0px; top: 0px; position: absolute; justify-content: center; align-items: center; display: inline-flex">
       <div style="width: 375px; height: 44px; position: relative; flex-direction: column; justify-content: flex-start; align-items: flex-start; display: flex">
       </div>
@@ -117,21 +117,15 @@
     <div style="left: 0px; top: 8px; position: absolute; color: white; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Trades</div>
   </div>
   <div style="left: 30px; top: 302px; position: absolute; display: flex; flex-direction: column; align-items: center;">
-    <div style="text-align: center; color: #235507; font-size: 30px; font-family: Inter; font-weight: 600; white-space: nowrap;">Victoria Robertson</div>
-    <div style="margin-top: 10px; text-align: center; color: #235507; font-size: 16px; font-family: Inter; font-weight: 700; white-space: nowrap;">A mantra goes here</div>
+    <div id="name" style="text-align: center; color: #235507; font-size: 30px; font-family: Inter; font-weight: 600; white-space: nowrap;">Victoria Robertson</div>
+    <div id="email" style="margin-top: 10px; text-align: center; color: #235507; font-size: 16px; font-family: Inter; font-weight: 700; white-space: nowrap;">A mantra goes here</div>
     <div class="segmented-control" style="margin-top: 10px;">
       <button class="segmented-control__button active" data-target="listing">Listing</button>
       <button class="segmented-control__button" data-target="reviews">Reviews</button>
     </div>
-
+    <div style="width: 343px; height: 77px; left: 0; top: 20px; position: relative">
     <div class="content" id="listing-content" style="display: block;">
-      <div style="width: 343px; height: 77px; left: 0; top: 20px; position: relative">
-        <div style="width: 50px; height: 50px; left: 0px; top: 0px; position: absolute; background: #F6F6F6; border-radius: 8px"></div>
-        <div style="left: 66px; top: 0px; position: absolute; color: black; font-size: 16px; font-family: Inter; font-weight: 700; word-wrap: break-word">Art Supplies</div>
-        <div style="left: 293px; top: 2px; position: absolute; text-align: right; color: #BDBDBD; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">8m ago</div>
-        <div style="width: 269px; left: 66px; top: 27px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">6 packs of Winsor&amp;Newton Oil Pastels</div>
-        <div style="width: 277px; height: 0px; left: 66px; top: 77px; position: absolute; border: 1px #E8E8E8 solid"></div>
-      </div>
+
     </div>
 
     <div class="content" id="reviews-content" style="display: none;">
