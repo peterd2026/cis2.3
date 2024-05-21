@@ -4,15 +4,6 @@ import { collection, getDocs } from 'https://www.gstatic.com/firebasejs/9.1.1/fi
 import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-auth.js';
 document.addEventListener('DOMContentLoaded', () => {
   const storage = getStorage(); // Initialize Firebase Storage instance
-  const auth = getAuth();
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      console.log('User is logged in:', user);
-      console.log('User is logged in:', user.uid);
-    } else {
-      window.location.href = 'login.html';
-    }
-  });
 
   getDocs(collection(db, 'items'))
     .then((querySnapshot) => {
