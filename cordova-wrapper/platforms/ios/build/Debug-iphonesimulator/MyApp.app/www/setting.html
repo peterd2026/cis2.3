@@ -1,16 +1,26 @@
-<html>
-<head><style data-emotion="css" data-s=""></style>
+<html><head><style data-emotion="css" data-s=""></style><style data-emotion="css" data-s=""></style>
   <meta charset="utf-8">
-  <title>Setting</title>
+  <title>Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta name="my-frontend-app/config/environment" content="%7B%22modulePrefix%22%3A%22my-frontend-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22my-frontend-app%22%2C%22version%22%3A%220.0.0%2Be215b3da%22%7D%7D">
-
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval'; connect-src 'self' https://firebasestorage.googleapis.com https://firestore.googleapis.com; img-src 'self' data: https://firebasestorage.googleapis.com https://www.google.com; script-src 'self' https://www.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">
   <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
   <link integrity="" rel="stylesheet" href="/assets/my-frontend-app-d41d8cd98f00b204e9800998ecf8427e.css">
+  <script type="module" src="js/setting.js"></script>
 
   <style data-styled="active" data-styled-version="5.3.8">
+    a:link {
+      text-decoration: none;
+    }
+    a:visited {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    a:active {
+      text-decoration: none;
+    }
     @font-face {
       font-family: 'Inter';
       font-weight: 600;
@@ -26,120 +36,129 @@
       font-family: 'Inter';
       font-weight: 500;
       src: url('fonts/Inter/Inter-Regular.ttf') format('truetype');
-    }</style>
+    }
+
+    @font-face {
+      font-family: 'Lato';
+      font-weight: 400;
+      src: url('fonts/Lato/Lato-Regular.ttf') format('truetype');
+    }
+
+    .segmented-control {
+      display: inline-flex;
+      overflow: hidden;
+      border-radius: 20px;
+      /*display: flex;*/
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    .segmented-control__button {
+      padding: 10px 16px;
+      font-size: 16px;
+      font-weight: 700;
+      font-family: Inter;
+      word-wrap: break-word;
+      border: none;
+      border-radius: 20px;
+      background-color: transparent;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .segmented-control__button:hover {
+      background-color: #eee;
+    }
+
+    .segmented-control__button.active {
+      background-color: #62931B;
+      color: white;
+      border-radius: 4px;
+    }</style><style data-styled="active" data-styled-version="5.3.8"></style>
 </head>
 
 
-<body class="ember-application" data-new-gr-c-s-check-loaded="14.1163.0" data-gr-ext-installed="">
+<body class="ember-application" data-new-gr-c-s-check-loaded="14.1173.0" data-gr-ext-installed="">
 
 <!-- Main Body -->
-<div>
-  <div style="width: 126px; height: 36px; padding-left: 98px; padding-right: 94px; left: 23px; top: 33px; position: absolute; justify-content: flex-end; align-items: center; display: inline-flex">
-    <div style="text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: 600; word-wrap: break-word">Setting</div>
-  </div>
-  <a href="search.html" style="text-decoration: none; color: inherit;">
-    <div style="width: 343px; height: 50px; left: 16px; top: 107px; position: absolute">
-      <div style="width: 362px; height: 50px; left: 0px; top: 0px; position: absolute; background: #F6F6F6; border-radius: 100px; border: 1px #E8E8E8 solid"></div>
-      <div style="left: 16px; top: 16px; position: absolute; color: #BDBDBD; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Search</div>
-    </div>
-  </a>
-  <div style="width: 362px; height: 222px; left: 16px; top: 210px; position: absolute">
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Koala Natural Body Wash</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Men’s Capilene® Cool Daily Shirt</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Thousand Fell Men’s Court</div>
-    </div>
-    <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Donations Near You</div>
-  </div>
-  <div style="width: 362px; height: 222px; left: 16px; top: 744px; position: absolute">
-    <div style="width: 110px; height: 177px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 177px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 177px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Hot Deals</div>
-  </div>
-  <div style="width: 365px; height: 38px; left: 15px; top: 414px; position: absolute">
-    <div style="width: 111px; height: 38px; left: 0px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and eco-frien...</div>
-    <div style="width: 111px; height: 38px; left: 126px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Made with 50-100% recy...</div>
-    <div style="width: 111px; height: 38px; left: 254px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and recy...</div>
-  </div>
-  <div style="width: 363px; height: 38px; left: 16px; top: 680px; position: absolute">
-    <div style="width: 111px; height: 38px; left: 0px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Lightweight georgette fabr...</div>
-    <div style="width: 111px; height: 38px; left: 126px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Modular sofa collection that...</div>
-    <div style="width: 111px; height: 38px; left: 252px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">The ECOBAGS Canvas Tote...</div>
-  </div>
+<div style="width: 100%; height: 100%; position:; background: white">
 
-  <div style="width: 362px; height: 222px; left: 16px; top: 477px; position: absolute">
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Reformation™ Twilight dress</div>
+  <div style="width: 425px; height: 1120px; left: -8px; top: -2px; position: absolute">
+    <div style="width: 100%;height: 335px;left: 8px;top: 0px;background: #94BF1A;border-top-left-radius: 12px;border-top-right-radius: 12px"></div>
+    <div style="width: 347px; height: 936px; left: 23px; top: 118px; position: absolute; background: white; box-shadow: 0px 2px 16px rgba(75.44, 75.44, 75.44, 0.15); border-radius: 16px"></div>
+    <div style="width: 425px; height: 845px; left: 0px; top: 275px; position: absolute; background: white; border-radius: 16px"></div>
+    <div id="profile_image"><div>
+      <img style="background-image: url('https://firebasestorage.googleapis.com/v0/b/shareable-37f85.appspot.com/o/profile%2FEnmDYmZmApPaSw40ATWhmLtsQ4t2.png?alt=media&amp;token=ed3f9407-9cb9-47e7-8b20-9a079aec3708'); width: 49px; height: 49px; left: 50px; top: 135px; position: absolute; box-shadow: 0px 4px 20px rgba(100.94, 100.94, 100.94, 0.35); border-radius: 9999px; border: 4px white solid" src="https://firebasestorage.googleapis.com/v0/b/shareable-37f85.appspot.com/o/profile%2FEnmDYmZmApPaSw40ATWhmLtsQ4t2.png?alt=media&amp;token=ed3f9407-9cb9-47e7-8b20-9a079aec3708">
+
+    </div></div>
+    <div style="left: 113px; top: 151px; position: absolute; text-align: right; color: black; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word" id="username"></div>
+    <div style="left: 113px; top: 170px; position: absolute; text-align: right; color: black; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word" id="email"></div>
+    <div style="width: 343px; height: 0px; left: 21px; top: 198px; position: absolute; border: 0.50px #CACACA solid"></div>
+    <div style="width: 343px;height: 0px;left: 23px;top: 385px;position: absolute;border: 0.50px #CACACA solid"></div>
+    <div style="width: 329px; height: 310px; left: 35px; top: 220px; position: absolute">
+      <div style="left: 0px; top: 0px; position: absolute; color: #ADADAD; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">Account Settings</div>
+      <div style="width: 329px; height: 24px; left: 0px; top: 52px; position: absolute">
+        <a href="editProfile.html" style=" left: 0; top: 1px; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word; width: 90px;">Edit profile</a>
+        <div style="width: 24px; height: 24px; left: 305px; top: 0px; position: absolute">
+          <img src="images/arrow.png" style="width: 7.41px; height: 12px; left: 8.59px; top: 6px; position: absolute;">
+        </div>
+      </div>
+      <div style="width: 329px; height: 24px; left: 0px; top: 108px; position: absolute">
+        <a href="changePassword.html" style="left: 0px; top: 0px; position: absolute; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">Change password</a>
+        <div style="width: 24px; height: 24px; left: 305px; top: 0px; position: absolute">
+          <img src="images/arrow.png" style="width: 7.41px; height: 12px; left: 8.59px; top: 6px; position: absolute;">
+        </div>
+      </div>
+
+
+
     </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Manks™ Blue Velvet Sofa</div>
+    <div style="width: 329px;height: 189px;left: 35px;top: 410px;position: absolute">
+      <div style="left: 0px; top: 0px; position: absolute; color: #ADADAD; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">More</div>
+      <div style="width: 329px; height: 24px; left: 0px; top: 53px; position: absolute">
+        <div style="left: 0px; top: 1px; position: absolute; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+          <a href="aboutUs.html" style="color: black; text-decoration: none;">About us</a>
+        </div>
+        <div style="width: 24px; height: 24px; left: 305px; top: 0px; position: absolute">
+        <img src="images/arrow.png" style="width: 7.41px; height: 12px; left: 8.59px; top: 6px; position: absolute;">
+      </div>
+      </div>
+      <div style="width: 329px; height: 24px; left: 0px; top: 109px; position: absolute">
+        <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">
+          <a href="privacyPolicy.html" style="color: black; text-decoration: none;">Privacy policy</a>
+        </div>        <div style="width: 24px; height: 24px; left: 305px; top: 0px; position: absolute">
+        <img src="images/arrow.png" style="width: 7.41px; height: 12px; left: 8.59px; top: 6px; position: absolute;">
+      </div>
+      </div>
+      <div style="width: 329px; height: 24px; left: 0px; top: 165px; position: absolute">
+        <a href="termsConditions.html" style="left: 0px; top: 0px; position: absolute; color: black; font-size: 18px; font-family: Inter; font-weight: 400; word-wrap: break-word">Terms and Conditions</a>
+        <div style="width: 24px; height: 24px; left: 305px; top: 0px; position: absolute">
+          <img src="images/arrow.png" style="width: 7.41px; height: 12px; left: 8.59px; top: 6px; position: absolute;">
+        </div>
+      </div>
     </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 27px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Recycled Canvas Tote Bag</div>
-    </div>
-    <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Recommended For You</div>
-  </div>
-  <div style="width: 362px; height: 230px; left: 13px; top: 996px; position: absolute">
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 0px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 126px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 252px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 131px; height: 25px; left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Daily Deals</div>
-  </div>
-  <div style="width: 131px; height: 25px; left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+
   </div>
 </div>
 
 <!-- navigation bar -->
 <div style="width: 100%; height: 83px; position: fixed; bottom: 0; background: #FAFAFA; ">
-  <a href="home.html"><img style="width: 34px; height: 32px; left: 50px; top: 15px; position: absolute" src="images/navicons/homeicon.png" /></a>
+  <a href="home.html"><img style="width: 34px; height: 32px; left: 50px; top: 15px; position: absolute" src="images/navicons/homeicon.png"></a>
   <div style="width: 375px; height: 0.50px; left: 0px; top: 0.50px; position: absolute; background: #BDC5CD"></div>
-  <a href="profile.html"><img style="width: 32px; height: 32px; left: 216px; top: 15px; position: absolute" src="images/navicons/profileicon.png" /></a>
-  <a href="upload.html"><img style="width: 32px; height: 32px; left: 134px; top: 15px; position: absolute" src="images/navicons/uploadicon.png" /></a>
-  <a href="setting.html"> <img style="width: 30.69px; height: 32px; left: 294px; top: 15px; position: absolute" src="images/navicons/settingiconact.png" /></a>
+  <a href="profile.html"><img style="width: 32px; height: 32px; left: 216px; top: 15px; position: absolute" src="images/navicons/profileicon.png"></a>
+  <a href="upload.html"><img style="width: 32px; height: 32px; left: 134px; top: 15px; position: absolute" src="images/navicons/uploadicon.png"></a>
+  <a href="setting.html"> <img style="width: 30.69px; height: 32px; left: 294px; top: 15px; position: absolute" src="images/navicons/settingiconact.png"></a>
 </div>
 
 <div></div><div id="Chat-Plugin-Root" class="compose-root-component"></div>
-<div></div><div id="compose-ai-general-snackbar-root"></div>
+<div></div>
 <grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body>
-</html>
+
+
+
+
+<div></div><div id="compose-ai-general-snackbar-root"></div><div id="Chat-Plugin-Root" class="compose-root-component"></div></body></html>

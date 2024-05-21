@@ -30,7 +30,7 @@
         <param name="onload" value="true" />
     </feature>
     <name>MyApp</name>
-    <description>Sample Apache Cordova App</description>
+    <description>CIS Student Developed App for Goods Donation</description>
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
